@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face{
+    font-family: myfont;
+    src:url("Font/Nereus-Font.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
+}
+
+body{
+    background-color: #360f5a;
+    font-family: "myfont", sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list{
+    
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.list-item{
+    padding: 10px;
+    background-color: #A07BEF;
+    transition: 1.2s transform ease;
+}
+
+.list-item:hover{
+    transform: scale(2);
+}
+
+.sideheader{
+    padding: 10px;
+    background-color: #522081;
+    color: black;
+}
+
+.header{
+    text-align: center;
+}
+
+.card{
+    background: linear-gradient(233deg, white, rgb(41, 0, 123));
+    border-radius: 10px;
+    margin: 20px;
+    width: 300px;
+    height: 500px;
+    padding: 10px;
+}
+
+.card-list-item{
+    border: 1px solid rgba(0, 0, 0, 0,2);
+    padding: 5px;
+    border-radius: 10px;
+    background-color: pink;
+}
+
+.card-list{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.cards-container
+{
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}

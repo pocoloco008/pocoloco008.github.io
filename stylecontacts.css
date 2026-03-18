@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list{
+    
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.list-item{
+    padding: 10px;
+    background-color: #A07BEF;
+    transition: 1.2s transform ease;
+}
+
+.list-item:hover{
+    transform: scale(2);
+}
