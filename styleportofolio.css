@@ -1,24 +1,24 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 @font-face{
-    font-family: pixelfont;
+    font-family: myfont;
     src:url("Font/Nereus-Font.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
+    font-display: swap; 
 }
 
 body{
-    min-height: 100vh;
-    background-color: #DDF0FF;
-    font-family: pixelfont, sans-serif !important;
-    color: #072033;
+    background-color: #360f5a;
+    font-family: "myfont", sans-serif;
+}
+nav{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .list{
@@ -29,115 +29,39 @@ body{
 }
 
 .list-item{
-    padding: 10px 16px;
-    background-color: #517A99;
-    transition: 0.3s transform ease, 0.3s background ease;
-    margin: 20px 0;
-    border-radius: 10px;
+    padding: 10px;
+    background-color: #A07BEF;
+    transition: 1.2s transform ease;
 }
 
 .list-item:hover{
-    transform: scale(1.05);
-    background-color: #DDF0FF;
-}
-
-.list-item a{
-    color: #fff;
-    text-decoration: none;
-}
-
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #072033;
+    transform: scale(2);
 }
 
 .sideheader{
     padding: 10px;
-    background: none;
-    color: #517A99;
-    margin: 0;
-    font-size: 1.4rem;
+    background-color: #522081;
+    color: black;
 }
-
-.navbar{
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(-60px);
-}
-
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar{
-    display: flex;
-    flex: 1 1 auto;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0;
-    transform: translateX(-60px);
-    justify-content: center;
-    align-items: center;
-}
-
 
 .header{
     text-align: center;
 }
 
-.card-link{
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
-
 .card{
-    background: #224866;
+    background: linear-gradient(233deg, white, rgb(41, 0, 123));
     border-radius: 10px;
     margin: 20px;
-    width: 320px;
-    height: 220px;
+    width: 300px;
+    height: 500px;
     padding: 10px;
-    transition: 1.2s transform ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.card > img{
-    display: block;
-    width: 80%;
-    height: 180px;
-    margin: 0 auto;
-    object-fit: cover;
-    object-position: center bottom;
-    border: 2px solid #000000;
-    border-radius: 8px;
 }
 
 .card-list-item{
     border: 1px solid rgba(0, 0, 0, 0,2);
     padding: 5px;
     border-radius: 10px;
-    background-color: #95B4CC;
-    position: relative;
-}
-
-.Hover-Effect{
-position: absolute;
-width: 250px;
-top: 250px;
-transition: 1s top ease;
-}
-
-.card:hover .Hover-Effect{
-    top: 10px;
+    background-color: pink;
 }
 
 .card-list{
@@ -146,95 +70,9 @@ transition: 1s top ease;
     gap: 10px;
 }
 
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
 .cards-container
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    flex: 1;
-}
-
-.projectstext{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.sidefooter{
-    padding: 10px;
-    background-color: #072033;
-    color: #517A99;
-    text-align: center;
-    width: 100%;
-}
-
-footer{
-    margin-top: auto;
-}
-
-.about-section{
+    justify-content: center;
     display: flex;
     gap: 20px;
-    align-items: center;
-    justify-content: space-between;
-    background: #224866;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 1000px;
-    width: 100%;
-    box-sizing: border-box;
 }
-
-.about-img {
-    margin-left: auto;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.about-img img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 2px solid #000000;
-    display: block;
-}
-
-.about-text{
-    color: white;
-    flex: 1;
-}
-
-@media (max-width: 700px){
-    .about-section{flex-direction: column; text-align: center;}
-    .about-img img{width: 150px; height: 150px;}
-}
-
-.language-toggle{
-    flex-shrink: 0;
-    padding: 10px 16px;
-    border: none;
-    border-radius: 10px;
-    background: #517A99;
-    color: #fff;
-    font: inherit;
-    cursor: pointer;
-    transition: 0.3s transform ease, 0.3s background ease;
-}
-
-.language-toggle:hover,
-.language-toggle:focus-visible{
-    transform: scale(1.05);
-    background: #DDF0FF;
-    color: #072033;
-}
-
-
