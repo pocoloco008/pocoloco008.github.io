@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="styleportofolio.css">
+    <script src="main.js"></script>
+</head>
+<body>
+<header>
+    <h1 class="sideheader">Paco van der Aar</h1>
+    <nav class="navbar">
+        <ul class="list">
+            <li class="list-item">
+                <a href="portfolio.html">Home</a>
+            </li>
+            <li class="list-item">
+                <a href="Projects.html">Projects</a>
+            </li>
+            <li class="list-item">
+                <a href="contact.html">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+    <button class="language-toggle" id="language-toggle" type="button" aria-pressed="false">Translate</button>
+</header>
+    <main class="cards-container">
+        <h1 class="projectstext">Latest Projects</h1>
+        <section class="cards">
+        <div class="card">
+            <img src="main-picture.png" alt="main-picture">
+            <ul class="card-list">
+                <li class="card-list-item">C#</li>
+                <li class="card-list-item">Unity</li>
+            </ul>
+             <div class="Hover-Effect">
+                <h2>Rock gobblers</h2>
+                <P>This is my solo project from year 3.</P>
+            </div>
+        </div>
+        </section>
+        <section class="about-section">
+                        <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hi I'm Paco van der Aar. im 18 years old, enjoy playing video games, drawing and walking alot. I am quite introverted but i still love talking alot with people. i am learning game development i work with C# and Unity. ive worked on several small projects and mostly focused on UI in unity and now im focusing more on gameplay, i would love to learn more coding languages so i have more knowledge on more than one aspect. i had a part time job as a waiter and have learned to work efficiently under pressure and comunicate not only with my co-workers in a positive way but also being able to communicate with customers so they are pleased with the service.</p>
+            </div>
+            <div class="about-img">
+                <img src="me-portofolio.jpg" alt="Paco van der Aar">
+            </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.cards .card').forEach((card) => {
+                if (card.closest('.card-link')) return;
+
+                const link = document.createElement('a');
+                link.href = 'Projects.html#project1';
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                link.className = 'card-link';
+
+                card.parentNode.insertBefore(link, card);
+                link.appendChild(card);
+            });
+        });
+    </script>
+</body>
+<footer>
+    <h1 class="sidefooter">Paco van der Aar</h1>
+</footer>
+</html>
